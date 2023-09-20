@@ -1,0 +1,58 @@
+/* CSS for making the background red when the page gets smaller */
+@media screen and (max-width: 500px) {
+    header {
+      background-color: rgb(32, 197, 32);
+    }
+    ul {
+      background-color: rgb(32, 197, 32);
+    }
+
+    header {
+        background-color: rgb(32, 197, 32);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    header,
+    main {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        display: flex;
+        justify-content: left;
+    }
+    
+    nav {
+        background-color: #36454f;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    nav ul {
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        border: 5px solid red;
+    }
+    
+    .active {
+        color: yellow;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
