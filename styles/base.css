@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(30, 87, 82);
+    margin: 10px;
 }
 
 h1 {
@@ -39,13 +40,14 @@ nav {
 
 .learn {
     background-color: rgb(30, 87, 82);
+    margin-top: 0px;
 }
 
 h3 {
     color: #cbe7e2;
     background-color: #dcdeea;
     text-align: center;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
 }
 
 h2 {
