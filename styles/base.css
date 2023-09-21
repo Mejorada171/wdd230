@@ -40,14 +40,14 @@ nav {
 
 .learn {
     background-color: rgb(30, 87, 82);
-    margin-top: 0px;
+    margin-top: -10px;
 }
 
 h3 {
     color: #cbe7e2;
     background-color: #dcdeea;
     text-align: center;
-    margin-bottom: -20px;
+    margin-bottom: -30px;
 }
 
 #wdd {
