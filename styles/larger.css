@@ -1,6 +1,22 @@
 /* CSS for making the background red when the page gets smaller */
-@media screen and (max-width: 240px) {
-    header 
+@media screen and (max-width: 640px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    card1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    card {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    header {
       background-color: rgb(32, 197, 32);
     }
 
@@ -84,16 +100,6 @@
     
     .active {
         color: yellow;
-    }
-
-    main {
-        display: grid;
-        font-family: Bebas Neue;
-        font-size: 25px;
-        background-color: white;
-        padding-top: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
     
     .card1 {

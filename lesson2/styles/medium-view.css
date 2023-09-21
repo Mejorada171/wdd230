@@ -1,0 +1,41 @@
+@media screen and (max-width: 860px) {
+    .column-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #visual {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #white {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #contrast {
+        width: 92.5%;
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin-top: 20px;
+    }
+
+    #img3 {
+        width: 100%;
+    }
+
+    h3.company {
+        margin-top: -40px;
+        margin-bottom: -80px;
+    }
+
+    h4.company {
+        margin-top: -50px;
+        margin-bottom: -90px;
+    }
+}

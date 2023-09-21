@@ -1,0 +1,85 @@
+@media screen and (max-width: 400px) {
+    header {
+        text-align: center;
+    }
+    
+    .column-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #visual {
+        width: 90%;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 20px;
+    }
+
+    #white {
+        width: 90%;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-top: 20px;
+    }
+
+    #contrast {
+        width: 90%;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 20px;
+    }
+
+    #img1, #img2, #img3 {
+        margin-top: -40px;
+        width: 100%;
+    }
+
+    .title2 {
+        margin-top: 30px;
+    }
+
+    footer {
+        text-align: center;
+    }
+    
+    h3, a {
+        margin-top: -40px;
+    }
+
+    .para1 {
+        margin-top: -20px;
+    }
+
+    h4 {
+        margin-top: -50px;
+    }
+
+    h3.company{
+        margin-top: -50px;
+    }
+
+    h4.company {
+        margin-top: -50px;
+    }
+
+    h5.company {
+        margin-top: -40px;
+        margin-bottom: 50px;
+    }
+
+    .para2 {
+        margin-top: -20px;
+    }
+
+    h5 {
+        margin-top: -40px;
+    }
+
+    #img3 {
+        margin-top: -10px;
+    }
+}

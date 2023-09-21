@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap');
+
+header {
+    display: flex;
+    align-items: center; 
+    background-color: #f0f0f0;
+    flex-direction: column; 
+    margin: 10px;
+    border: 1px solid #ccc;
+    font-family: Roboto;
+  }
+
+h1 {
+    margin-bottom: 10px; 
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+section {
+    flex: 1; 
+    margin-right: 20px; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+}
+
+img {
+    width: 300px;
+}
+
+img {
+    margin-top: 15px;
+    width: 350px;
+    border: 2px solid green;
+}
+
+.title {
+    font-size: 35px;
+    font-family: Roboto;
+    margin-top: -0px;
+}
+
+p {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman';
+}
+
+.para11, .para22, .para33 {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.company {
+    font-size: 25px;
+    font-family: Roboto;
+    margin-top: -20px;
+    margin-bottom: -1px;
+}
+
+h5.company {
+    margin-top: -40px;
+}
+
+footer { 
+    display: flex;
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente en el contenedor */
+    background-color: #f0f0f0; /* Color de fondo para las columnas (puedes ajustarlo) */
+    border: 1px solid #ccc;
+    margin: 10px;
+    font-family: 'Times New Roman';
+}
