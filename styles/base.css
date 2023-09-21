@@ -10,12 +10,25 @@
     margin: 10px;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    background-color: rgb(95, 224, 9);
+}
+
 h1 {
     font-family: Bebas Neue;
     font-size: 35px;
   }
 
 ul {
+    text-align: center;
+}
+
+#activities {
     text-align: left;
 }
 
@@ -25,7 +38,23 @@ main {
     font-size: 25px;
     background-color: white;
     padding-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
+
+.card1 {
+    margin-left: 10px;
+    grid-row: 1; /* Mantén la misma fila (row 1) */
+    grid-column: 1; /* Cambia la columna a la primera columna (izquierda) */
+}
+
+.card {
+    margin-top: -8px;
+    margin-bottom: 0px;
+    grid-row: 1; /* Mantén la misma fila (row 1) */
+    grid-column: 2; /* Cambia la columna a la primera columna (izquierda) */
+}
+
 
 nav {
     font-family: Bebas Neue;
@@ -51,20 +80,21 @@ h3 {
 }
 
 #wdd {
+    font-family: Bebas Neue;
+    font-size: 30px;
     color: #cbe7e2;
     background-color: rgb(30, 87, 82);
     text-align:  center;
     margin: 10px;
 }
 
-.card {
+.card, .card1 {
     background-color: #dcdeea;
-    margin: 10px;
 }
 
 #profile {
-    max-width: 15%;
-    max-height: 15%;
+    max-width: 200px;
+    max-height: 200px;
     z-index: 0;
     margin-right: 50px;
     padding-right: 10px;
