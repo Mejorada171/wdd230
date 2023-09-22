@@ -16,7 +16,7 @@ nav ul {
 }
 
 nav a:hover {
-    background-color: rgb(95, 224, 9);
+    background-color: #f9c91a;
 }
 
 h1 {
@@ -68,6 +68,11 @@ nav {
 }
 
 .learn {
+    background-color: rgb(30, 87, 82);
+    margin-top: -10px;
+}
+
+.learn1 {
     background-color: rgb(30, 87, 82);
     margin-top: -10px;
 }
