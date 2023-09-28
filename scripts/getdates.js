@@ -21,4 +21,14 @@ let options1 = {
 
 let currentDate = new Date().toLocaleDateString("en-US", options1);
 
-lastModified.textContent = currentDate; 
+lastModified.textContent = currentDate;
+
+// Hamburger menu
+
+const hamButton = document.querySelector('.bar');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});

@@ -19,6 +19,14 @@ nav a:hover {
     background-color: #f9c91a;
 }
 
+li.open::before {
+    content: "⚜️ ";
+}
+
+section a:hover {
+    background-color: #f9c91a;
+}
+
 h1 {
     font-family: Bebas Neue;
     font-size: 35px;
@@ -98,8 +106,8 @@ h3 {
 }
 
 #profile {
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 180px;
     z-index: 0;
     margin-right: 50px;
     padding-right: 10px;
@@ -118,5 +126,20 @@ footer {
     padding-top: 10px;
     background-color: #dcdeea;
     margin: 10px;
+}
+
+p#name2::before {
+    content: "✌🏻 ";
+}
+
+p#name2::after {
+    content: " ✌🏻";
+}
+
+iframe {
+    width: 1330px; 
+    height: 450px;
+    margin: 10px; 
+    border: solid 2px black;
 }
 
