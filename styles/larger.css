@@ -7,7 +7,7 @@
         margin-right: -0px;
     }
 
-    .bar {
+    .button {
         font-size: 1.5rem;
         border: 1px solid rgba(0,0,0,.3);
         padding: .25rem .75rem;
@@ -19,13 +19,17 @@
         width: 2em;
         height: 2em;
     }
+
+    nav.bar {
+        display: 1px;
+    }
     
-    .bar::before {
+    .button::before {
         content: "☰";
         margin-right: 35px;
     }
     
-    .bar.open::before {
+    .button.open::before {
         content: "↩️";  
         margin-left: -5px;
     }
@@ -37,8 +41,7 @@
         background-color: #333;
         color: #fff;
         width: 570px;
-        margin-top: 460px;
-        margin-left: -506px;
+        margin-top: -29px;
     }
 
     .navigation li {
@@ -88,11 +91,12 @@
     p#name2::after {
         content: " ✌🏻";
     }
+
     section.card1 {
         display: grid;
         grid-column: 1/3;
         grid-row: 1/2;
-        margin-right: 30px;
+        margin-right: 300px;
     }
 
     nav.card {
@@ -112,11 +116,6 @@
         grid-template-rows: 1fr 1fr;
     }
 
-    nav {
-        display: grid;
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
 
     section {
         display: grid;
@@ -138,7 +137,7 @@
     h3.learn {
         display: grid;
         grid-column: 1/3;
-        margin-right: -20px;
+        margin-right: 20px;
     }
 
     .top {
@@ -170,10 +169,6 @@
         list-style: none;
     }
 
-    nav.bar {
-        grid-row: 2/3;
-    }
-
     header {
         background-color: rgb(32, 197, 32);
         display: flex;
@@ -199,7 +194,9 @@
     }
     
     h2#wdd {
-        margin-top: 540px;
+        margin-top: -300px;
+        grid-row: 3/4;
+        height: 50px;
     }
 
     nav {
