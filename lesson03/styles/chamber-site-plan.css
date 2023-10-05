@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap');
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: #353535;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: #353535;
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  color: white;
+  background-color: #284B63; 
+}
+
+header > h1,
+header > h2 {
+  font-family: "Bebas Neue";
+  font-size: 35px;
+  color: white;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #353535;
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.colors th {
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #3C6E71;
+}
+
+.colors td {
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: #FFFFFF;
+}
+
+.secondary {
+  color: #FFFFFF;
+  background-color: #353535;
+}
+
+.accent1 {
+  color: #FFFFFF;
+  background-color: #284B63;
+}
+
+.accent2 {
+  color: #FFFFFF;
+  background-color: #3C6E71;
+}
+
+p.colored {
+  background-color: #3C6E71;
+  color: #FFFFFF;
+}
+
+nav {
+  color: #FFFFFF;
+  background-color: #284B63;
+  line-height: 3em;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  padding: 1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:link,
+nav a:visited {
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  color: #FFFFFF;
+  background-color: #353535;
+}
+
+.sitemap {
+  width: 1000px;
+  text-align: center;
+  margin-left: -240px;
+}
+
+.sitemap{
+  display: block;
+  max-width: 100%;
+  margin: 0 auto; 
+}
+
+.img3 {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.grid-img {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.logo-img {
+  max-width: 40%;
+}
+
+.wireframe {
+  width: 400px;
+}
+
+.mobile-view {
+  width: 250px;
+}
+
+.mobile {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+}
+
+#view1 {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+}
+
