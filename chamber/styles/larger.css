@@ -1,0 +1,182 @@
+@media screen and (max-width: 600px) {
+    .button {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 85%;
+    }
+    
+    .button::before {
+        background-color: #3c6e71;
+        content: "☰";
+        height: 40px;
+        width: 40px;
+
+    }
+    
+    .button.open::before {
+        content: "↩️";  
+        margin-left: 1px;
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        background-color: #3c6e71;
+        color: #FFFFFF;
+        width: 540px;
+        margin-top: -29px;
+        margin-left: 2%;
+        margin-right: 20%;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .navigation li a:hover {
+        background-color: #FFFFFF;
+        color: #333;
+        font-weight: 700;
+    }
+    
+    /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+    .open li {
+        display: block;
+        width: 100%;
+    }
+
+    .open li a {
+        display: block;
+    }
+
+    .num1 {
+        margin-top: 160px;
+    }
+    
+    .num2 {
+        margin-top: 160px;
+    }
+    
+    .num3 {
+        margin-top: 160px;
+    }
+
+    #mem-title {
+        margin-top: 1px;
+    }
+
+    #media1 {
+        position: absolute;
+        top: 5%;
+        left: 30%;
+    }
+
+    #media2 {
+        position: absolute;
+        top: 5%;
+        left: 45%;
+    }
+
+    #media3 {
+        position: absolute;
+        top: 5%;
+        left: 60%;
+    }
+
+    #title {
+        padding-left: 10px;
+    }
+
+    #flag {
+        margin-left: 25%;
+    }
+
+    #img-purpose {
+        height: 320px;
+    }
+
+    section#weather {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #weather img {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 18%;
+    }
+    
+    section#events {
+        background-color: #3c6e71;
+        width: 1330px;
+        height: 460px;
+        margin: 10px;
+        margin-top: -60px;
+    }
+
+    #p1 {
+        margin-top: 110px;
+    }
+
+    section p {
+
+        font-size: 30px;
+        margin-left: 90px;
+    }
+    
+    #wireframe #mobile {
+        font-family: "Bebas Neue";
+        font-weight: 600;
+        font-size: 25px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-left: 50px;
+    }
+    
+    #wireframe #img-mobile {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 70px;
+        margin-left: 10%;
+    }
+    
+    #wireframe #img-mobile2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-top: -127%;
+        margin-left: 9%;
+    }
+    
+    #wireframe #larger {
+        font-family: "Bebas Neue";
+        font-weight: 600;
+        font-size: 25px;
+        grid-column: 8/9;
+        grid-row:  1/2;
+        padding-left: 100px;
+        margin-top: 100px;
+        padding-top: 25px;
+    }
+    
+    #wireframe #img-larger {
+        grid-column: 8/9;
+        grid-row:  1/2;
+        margin-right: 100px;
+        margin-top: 170px;
+    }
+
+    section#wireframe {
+        height: 800px;
+    }
+}
