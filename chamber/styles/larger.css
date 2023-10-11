@@ -1,4 +1,8 @@
 @media screen and (max-width: 600px) {
+    button.button{
+        display: grid;
+    } 
+
     .button {
         width: 50px;
         height: 50px;
@@ -59,6 +63,10 @@
         display: block;
     }
 
+    section#member {
+        margin-right: 10px;
+    }
+
     .num1 {
         margin-top: 160px;
     }
@@ -72,7 +80,31 @@
     }
 
     #mem-title {
-        margin-top: 1px;
+        margin-top: 20px;
+        display: grid;
+        grid-column: 4/7;
+
+    }
+
+    #m1 {
+        margin-left: -17px;
+        font-size: 12px;
+        display: grid;
+        grid-column: 1/3;
+    }
+
+    #m2 {
+        margin-left: -12px;
+        font-size: 12px;
+        display: grid;
+        grid-column: 4/7;
+    }
+
+    #m3 {
+        margin-left: -5px;
+        font-size: 12px;
+        display: grid;
+        grid-column: 7/10;
     }
 
     #media1 {
@@ -135,48 +167,4 @@
         margin-left: 90px;
     }
     
-    #wireframe #mobile {
-        font-family: "Bebas Neue";
-        font-weight: 600;
-        font-size: 25px;
-        grid-column: 2/3;
-        grid-row: 2/3;
-        margin-left: 50px;
-    }
-    
-    #wireframe #img-mobile {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        margin-top: 70px;
-        margin-left: 10%;
-    }
-    
-    #wireframe #img-mobile2 {
-        grid-column: 2/3;
-        grid-row: 3/4;
-        margin-top: -127%;
-        margin-left: 9%;
-    }
-    
-    #wireframe #larger {
-        font-family: "Bebas Neue";
-        font-weight: 600;
-        font-size: 25px;
-        grid-column: 8/9;
-        grid-row:  1/2;
-        padding-left: 100px;
-        margin-top: 100px;
-        padding-top: 25px;
-    }
-    
-    #wireframe #img-larger {
-        grid-column: 8/9;
-        grid-row:  1/2;
-        margin-right: 100px;
-        margin-top: 170px;
-    }
-
-    section#wireframe {
-        height: 800px;
-    }
 }

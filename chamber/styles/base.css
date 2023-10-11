@@ -71,6 +71,9 @@ section#purpose {
     margin-top: 10px;
 }
 
+button.button{
+    display: none} 
+
 button {
     width: 210px;
     height: 90px;
