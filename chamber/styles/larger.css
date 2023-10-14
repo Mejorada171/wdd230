@@ -166,5 +166,13 @@
         font-size: 30px;
         margin-left: 90px;
     }
+
+    #mode {
+        position: absolute;
+        top: 1.7rem;
+        right: 5.5rem;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
     
 }

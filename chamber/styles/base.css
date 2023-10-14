@@ -511,3 +511,13 @@ footer {
     width: 1px;
     height: 1px;
 }
+
+/* DARK MODE BUTTON */
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.7rem;
+	cursor: pointer;
+}
