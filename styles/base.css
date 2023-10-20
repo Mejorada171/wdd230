@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap');
 
-
 .top {
     color: #cbe7e2;
     display: flex;
@@ -137,9 +136,41 @@ p#name2::after {
 }
 
 iframe {
-    width: 1330px; 
+    width: 98.5%; 
     height: 450px;
     margin: 10px; 
     border: solid 2px black;
 }
 
+#heroimg {
+    width: 1330px;
+    margin-left: 10px;
+    margin-bottom: -110px;
+}
+
+button {
+    display: none;
+}
+
+.herolabel p {
+    margin-top: -25px;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Bebas Neue";
+    text-align: center;
+}
+
+.herolabel {
+    position: relative;
+    bottom: 700px;
+    left: 50px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    width: 200px;
+    height: 120px;
+    /* Buenas */
+}
