@@ -47,7 +47,14 @@
                 and create partnership with others, in addition we seek for suppliers of all kind
                 of steel, if you belong this industry you belong here. Welcome! 
             </h3>
-            <img id="img-purpose" src="images/rsz_steel2023.webp.jpg" width="360px" height="320px" alt="Steel icon">
+            <div class="hero">
+                <picture>
+                    <source srcset="images/small-hero-week06.webp" media="(max-width: 600px)">
+                    <source srcset="images/medium-hero-week06.webp" media="(max-width: 800px)">
+                    <source srcset="images/large-hero-week06.webp" media="(max-width: 1000px)">
+                    <img id="img-purpose" src="images/hero-week06.webp" width="360" height="320" alt="Steel icon" loading="lazy">
+                </picture>
+            </div>
         </section>
         <section id="events">
             <p id="eve-title">EVENTS</p>
@@ -70,6 +77,20 @@
                 <li id="li2">Humidity: 85%</li>
                 <li id="li3">Cloudy</li>
             </ul>
+            <div class="wind">
+                <p class="w1" id="sub">Wind Chill Calculator</p>
+                <p class="w1" id="chill">Enter temperature and wind speed</p>
+
+                <label class="w1" for="temperature">Temperature (°F):</label>
+                <input class="w1" type="number" id="temperature" min="-50" max="50"><br>
+
+                <label class="w1" for="windspeed">Wind Speed (mph):</label>
+                <input class="w1" type="number" id="windspeed" min="3.1"><br>
+
+                <button class="w1" id="calculate" onclick="calculateWindChill()">Press Calculate Wind Chill</button>
+
+                <p class="w1" id="outcome">Wind Chill Factor: <span id="windChillValue"></span></p>
+            </div>
             <img src="images/rsz_cloudy.webp" alt="Cloudy">
         </section>
         <section id="member">
@@ -103,5 +124,7 @@
         <p>Last Modified:</p><div id="lastModified"></div>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
+
 </body>
 </html>
