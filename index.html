@@ -20,7 +20,7 @@
 </head>
 <body>
     <header class="top">
-            <img id="profile" src="images/Me-no-glasses.webp" alt="Me no glasses">
+            <img id="profile" src="images/Me-no-glasses.webp" alt="Me no glasses" loading="lazy">
             <h1 id="name">Jorge Javier Mejorada Hernández</h1>
     </header>
     <button class="button"></button>
@@ -54,7 +54,7 @@
                 <li><a href="https://codepen.io/Mejorada171/pen/abPaVOX?editors=1100">04: CSS Pseudo-Classes (Code Pen)</a></li> 
                 <li><a href="https://mejorada171.github.io/wdd230/lesson05/bom.html">05: DOM Manipulation</a></li>
                 <li><a href="https://mejorada171.github.io/wdd230/lesson06/images/landscape.webp.webp">06: WebP |</a><a href="https://mejorada171.github.io/wdd230/lesson06/responsive-images.html">Responsive Images: srcset</a></li> 
-                <li><a href="">07:</a></li> 
+                <li><a href="https://mejorada171.github.io/wdd230/lesson03/lazyload.html">07: Lazy Loading |</a></li> 
                 <li><a href="">08:</a></li> 
                 <li><a href="">09:</a></li> 
                 <li><a href="">10:</a></li> 
@@ -64,7 +64,7 @@
             <h3 class="learn1">Information</h3>
             <p>Guadalajara, Jalisco, Mexico</p>
             <p> 🌞 30 °C - Sunshine</p>
-            <p>Page visits: 16</p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </nav>
     </main>
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14932.46674356189!2d-103.20864474999999!3d20.66483125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1695817665982!5m2!1ses-419!2smx"></iframe>
@@ -73,7 +73,7 @@
         <p id="name2">Jorge Javier Mejorada Hernández 
             Guadalajara, Jalisco, Mexico.
         </p>
-        <img id="flag" src="images/mexico-flag(1).webp" alt="Mexican Flag">
+        <img id="flag" src="images/mexico-flag(1).webp" alt="Mexican Flag" loading="lazy">
         <p>Last Modified:</p><div id="lastModified"></div>
     </footer>
     <script src="scripts/getdates.js"></script>
