@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Lynch, Kevin Bagley, Jorge Mejorada">
+    <meta name="description" content="WDD 230 - Web Frontend Development. Our group consists of Kevin Bagley, Jorge Mejorada, and Chris Lynch. This is our Book of Mormon Favorite Chapters and Heroes Application.">
+    <link rel="stylesheet" href="styles/bom.css">
+    <title>Book of Mormon Favorite Chapters</title>
+</head>
+<body>
+    <h1>📖 Book of Mormon - Top 10</h1>
+
+    <main>
+        <div>
+        <h2>Book of Mormon Chapters</h2>
+	        <label for="favchap">Enter Book and Chapter: </label>
+	        <input type="text" id="favchap" placeholder="Alma 5" value="Alma 5">
+	        <button type="submit">Add Chapter</button>
+	        <ul id="list"></ul>
+        </div>
+
+        <div>
+        <h2>Book of Mormon Heroes</h2>
+	        <label for="favhero">Enter Hero: </label>
+	        <input type="text" id="favhero" placeholder="Nephi" value="Nephi">
+	        <button id="button2" type="submit">Add Hero</button>
+	        <ul id="heroes"></ul>
+        </div>
+
+    </main>
+
+    <script src="scripts/base.js"></script>
+</body>
+</html>
