@@ -1,0 +1,130 @@
+:root {
+	--header: #3C6E71;
+	--nav: #dcdeea;
+    --font1: #cbe7e2;
+	--font2: #353535;
+	--shadow: hsl(0,0%,50%);
+	--button: #dcdeea;
+    --backform: #dcdeea; 
+    --background: white;
+}
+
+#message {
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.top {
+    color: var(--font1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header);
+    margin: 10px;
+}
+
+nav ul {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a:hover {
+    background-color: #f9c91a;
+}
+
+li.open::before {
+    content: "⚜️ ";
+}
+
+section a:hover {
+    background-color: #f9c91a;
+}
+
+h1 {
+    font-family: Bebas Neue;
+    font-size: 35px;
+  }
+
+ul {
+    text-align: center;
+}
+
+#activities {
+    text-align: left;
+}
+
+main {
+    display: grid;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    background-color: var(--background);
+    padding-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+nav {
+    font-family: Bebas Neue;
+    font-size: 25px;
+    grid-column: 1/2;
+    background-color: var(--nav);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+#flag {
+    width: 10em;
+}
+
+footer {
+    font-family: Bebas Neue;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: var(--nav);
+    margin: 10px;
+}
+
+p#name2::before {
+    content: "✌🏻 ";
+}
+
+p#name2::after {
+    content: " ✌🏻";
+}
+
+#profile {
+    width: 200px;
+    height: 180px;
+    z-index: 0;
+    margin-right: 50px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+button.button {
+    display: none;
+}
+
+/*----------- FORM --------------*/
+
+.field {
+    background-color: var(--backform);
+}
+
+#but {
+    margin-top: 10px;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+}

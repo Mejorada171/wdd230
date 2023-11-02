@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap');
-
 .top {
     color: #cbe7e2;
     display: flex;
@@ -7,7 +6,7 @@
     justify-content: center;
     background-color: rgb(30, 87, 82);
     margin: 10px;
-}
+} 
 
 nav ul {
     display: flex;
