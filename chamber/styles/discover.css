@@ -693,3 +693,14 @@ main#mainthank {
     grid-row: 1/2;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 600px) {
+.form-section {
+    width: 44%;
+    margin-left: 2px;
+}
+
+#description {
+    width: 99%;
+}
+}
