@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Mejorada">
+    <meta name="description" content="WDD 230 - Web Frontend Development
+    I'm Jorge Javier Mejorada Hernández and this is the Chamber Home Page Build">
+    <link rel="icon" href="images/cahmber-favicon.ico">  
+    <link rel="stylesheet" href="styles/discover.css">
+    <meta property="og:title" content="Jorge Mejorada Hernández - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.mexicodesconocido.com.mx/wp-content/uploads/2010/08/43536211072_f056f987d1_o-scaled.jpg">
+    <meta property="og:url" content="https://churchofjesuschrist.org">
+    <title>08: Chamber Join Page</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/rsz_chamber.webp" alt="Chamber logo">
+        <h1 id="title">Guadalajara Chamber of Commerce</h1>
+        <img id="media1" src="images/rsz_1facebook.webp" alt="Facebook icon">
+        <img id="media2" src="images/rsz_instagram.webp" alt="Instagram icon">
+        <img id="media3" class="media" src="images/rsz_indeed-employer-logo.webp" alt="Indeed icon">
+
+        <div id="mode">☑️</div>
+        <button class="button"></button>
+        <nav class="bar">
+            <ul class="navigation">
+                <li class="open"><a class="open" href="#">HOME</a></li>
+                <li class="open"><a class="open" href="https://mejorada171.github.io/wdd230/chamber/discover.html">DISCOVER</a></li>
+                <li class="open"><a class="open" href="#">DIRECTORY</a></li>
+                <li class="open"><a class="open" href="#">JOIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mainjoin">
+        <form method="get" action="thankyou.html">
+            <fieldset class="field">
+                <legend>First Name*</legend>
+                <label id="first_name"><input type="text" name="first_name" title="Please enter a valid name" required></label>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Last Name*</legend>
+                <label id="last_name"><input type="text" name="last_name" title="Please enter a valid last name" required></label>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Title or Position*</legend>
+                <label id="title1"><input type="text" name="title1" title="Please enter a valid title" pattern="[a-zA-Z -]{7,}" required></label>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Email*</legend>
+                <label id="email"><input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Mobile Phone Number*</legend>
+                <label id="number"><input type="tel" name="number" required></label>
+            </fieldset>
+            <fieldset class="field">
+                <legend>Business/Organization's Name*</legend>
+                <label id="business"><input type="text" name="business" required></label>
+            </fieldset>
+            <fieldset class="field" id="select">
+                <label for="membership">Select Membership Level:</label>
+                <select name="membership" id="membership">
+                <option value="NP">NP Membership (Non-Profit) - Free</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+                </select>
+            </fieldset>
+            <div class="form-container">
+            <!-- Left Section: Form Inputs -->
+            <div class="form-section">
+                <label class="form" for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+
+                <label class="form">Timestamp:</label>
+                <div id="current-date"></div>
+                <div id="timestamp"></div>
+        
+                <script>
+                    // Get the current date
+                    const cuDate = document.getElementById("current-date");
+                    const currentDate = new Date().toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    });
+                    cuDate.textContent = currentDate;
+        
+                    // Get the last modified date and time
+                    const lastModifiedDate = document.lastModified;
+                    const timestamp = document.getElementById("timestamp");
+                    timestamp.textContent = lastModifiedDate;
+                </script>
+                
+                <label><button id="but" type="submit">Let's get there!</button></label>     
+            </div>
+            <!-- Right Section: Membership Benefits -->
+            <div class="form-section" id="memeber">
+                <h2 id="mem1">Membership Benefits:</h2>
+                <ul id="mem2">
+                    <li><strong>NP Membership:</strong> Free for non-profit organizations.</li>
+                    <li><strong>Bronze Membership:</strong> Benefits include XYZ.</li>
+                    <li><strong>Silver Membership:</strong> Benefits include ABC.</li>
+                    <li><strong>Gold Membership:</strong> Benefits include 123.</li>
+                </ul>
+            </div>
+        </div>  
+        </form>
+    </main>
+
+    <footer id="footerjoin">
+        <p>You can call to 999-980-5540</p>
+        <p>This is 04: Project - The Chamber of Commerce Home Page</p>
+        @<div id="year"></div>
+        <p id="name2">Jorge Javier Mejorada Hernández 
+            Guadalajara, Jalisco, Mexico.
+        </p>
+        <img id="flag" src="images/mexico-flag.webp" alt="Mexican Flag">
+        <p>Last Modified:</p><div id="lastModified"></div>
+    </footer>
+    <script src="scripts/discover.js"></script>
+
+</body>
+</html>

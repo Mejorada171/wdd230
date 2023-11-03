@@ -557,5 +557,139 @@ header img {
         margin: 10px;
         margin-top: 40px;
     }
-    
+}
+
+/* //////////////////////////////////////////
+///////// JOIN OF THE CHAMBER ///////////
+/////////////////////////////////////////////*/
+:root {
+	--headerjoin: #284B63;
+    --fontjoin1: #ffffff;
+	--fontjoin2: #000000;
+    --borderjoin: #5a4af1;
+	--shadowjoin: hsl(0,0%,50%);
+	--buttonjoin: #3C6E71;
+    --backformjoin: #dcdeead0; 
+    --backgroundjoin: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+form {
+    grid-column: 2/5;
+}
+
+.field {
+    background-color: var(--backformjoin);
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    border: 3px solid var(--borderjoin);
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-section {
+    flex: 1;
+    padding: 10px; 
+    background-color: var(--backformjoin);
+    margin-top: 10px;
+    border: 3px solid var(--borderjoin);
+}
+
+#memeber {
+    margin-left: 10px;
+}
+
+#select {
+    margin-top: 10px;
+}
+
+#mainjoin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#footerjoin {
+    display: flex;
+    flex-direction: column;
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: var(--buttonjoin);
+    color: var(--fontjoin1);
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.form {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+}
+
+#mem1 {
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+#mem2 {
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+#but {
+    font-family: "Bebas Neue";
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+    background-color: var(--fontjoin2);
+    color: var(--fontjoin1);
+}
+
+/* //////////////////////////////////////////
+///////// THANK YOU PAGE ///////////
+/////////////////////////////////////////////*/
+
+main#mainthank {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#one {
+    display: grid;
+    grid-column: 3/4;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    background-color: var(--backformjoin);
+    border: 3px solid var(--borderjoin);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#two {
+    display: grid;
+    grid-column: 3/4;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    background-color: var(--backformjoin);
+    border: 3px solid var(--borderjoin);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#footerthank {
+    grid-row: 1/2;
+    margin-top: 20px;
 }

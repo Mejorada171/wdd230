@@ -1,27 +1,25 @@
-// Let's get the current year
+document.addEventListener("DOMContentLoaded", function() {
+    // Let's get the current year
+    const yearElement = document.getElementById("year");
+    const yearOptions = {
+        year: "numeric"
+    };
+    yearElement.textContent = new Date().toLocaleDateString("en-US", yearOptions);
 
-const options = {
-    year: "numeric"
-};
+    // Let's get the Last Modified date and time
+    const lastModifiedElement = document.getElementById("lastModified");
+    const lastModifiedOptions = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric'
+    };
+    const currentDate = new Date().toLocaleDateString("en-US", lastModifiedOptions);
 
-year.innerHTML = new Date().toLocaleDateString("en-US", options);
-
-// Let's get the Last Modified date and hour
-
-let lastModifiedElement = document.getElementById("lastModified");
-
-let options1 = {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric'
-};
-
-let currentDate = new Date().toLocaleDateString("en-US", options1);
-
-lastModified.textContent = currentDate;
+    lastModifiedElement.textContent = "Last Modified: " + currentDate;
+});
 
 // Hamburger menu
 
@@ -79,31 +77,3 @@ modeButton.addEventListener("click", () => {
         purpose2.style.color = "#353535";
     }
 });
-
-// Display a message
-
-// Check if localStorage has a 'lastVisit' item
-if (localStorage.getItem('lastVisit')) {
-    // Retrieve the last visit date from localStorage
-    const lastVisitDate = new Date(localStorage.getItem('lastVisit'));
-    const currentDate = new Date();
-
-    // Calculate the difference in milliseconds between the current visit and the last visit
-    const timeDifference = currentDate - lastVisitDate;
-
-    // Calculate the number of days
-    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-    if (daysDifference === 0) {
-        document.getElementById('message').textContent = "Back so soon! Awesome!";
-    } else {
-        const message = `You last visited ${daysDifference} ${daysDifference === 1 ? 'day' : 'days'} ago.`;
-        document.getElementById('message').textContent = message;
-    }
-} else {
-    // This is the user's first visit
-    document.getElementById('message').textContent = "Welcome! Let us know if you have any questions.";
-}
-
-// Store the current visit date in localStorage
-localStorage.setItem('lastVisit', new Date().toString());
