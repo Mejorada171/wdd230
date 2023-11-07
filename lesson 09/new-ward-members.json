@@ -1,0 +1,33 @@
+{
+    "familyName" : "Mejorada",
+    "dateWard" : "20/12/2018",
+    "numberOfRecords" : "5",
+    "visited by bishopric?" : "Yes",
+    "familyMembers" : [
+        {
+            "name" : "Jorge Humberto Mejorada Santoyo (DAD)",
+            "gender" : "Male",
+            "birthdate" : "02/05/1972"
+        },
+        {
+            "name" : "Mireya Hernández Lopez (MOM)",
+            "gender" : "Female",
+            "birthdate" : "09/04/1976"
+        },
+        {
+            "name" : "  Scarlett Mejorada Hernandez (OLDER SISTER)",
+            "gender" : "Female",
+            "birthdate" : "09/01/1998"
+        },
+        {
+            "name" : "Jorge Javier Mejorada Hernandez (MIDDLE BROTHER)",
+            "gender" : "Male",
+            "birthdate" : "18/09/2001"
+        },
+        {
+            "name" : "Kelly Camila Mejorada Hernandez (YOUNGER SISTER)",
+            "gender" : "Female",
+            "birthdate" : "13/08/2007"
+        }
+    ]
+}
