@@ -45,17 +45,17 @@ main {
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1rem; /* Add this for some spacing between sections */
 }
 
 section {
+  width: 300px;
   margin: 0.25rem;
   padding: 0.35rem;
   background-color: #eee;
   border: 1px solid #bbb;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 section > p {
   min-height: 60px;
