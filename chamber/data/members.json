@@ -1,0 +1,64 @@
+{
+    "companies": [
+        {
+        "number": "1",
+        "name": "TESLA",
+        "address": "2312 S. State Street South Salt Lake City, UT",
+        "phoneNumber": "801-596-4620",
+        "websiteUrl": "https://www.tesla.com/?redirect=no",
+        "image": "https://www.experimenta.es/wp-content/uploads/2018/10/tesla-logo.jpg",
+        "membershipLevel": "Gold",
+        "NumberOfEmployees": "127,855"
+        },
+        {
+            "number": "2",
+            "name": "APPLE",
+            "address": "1 Crossgates Mall Road Albany, NY 12203",
+            "phoneNumber": "(518) 389-0140",
+            "websiteUrl": "https://www.apple.com/",
+            "image": "https://i.pinimg.com/originals/03/32/88/033288573e174c88f2f3b3c789b75212.jpg",
+            "membershipLevel": "Gold",
+            "NumberOfEmployees": "164,000"
+        },
+        {
+            "number": "3",
+            "name": "AMAZON",
+            "address": "Av. Plan de San Luis 1899 Chapultepec Country, 44610, Guadalajara.",
+            "phoneNumber": "01-800-874-8725",
+            "websiteUrl": "https://www.amazon.com.mx/",
+            "image": "https://cdn.logojoy.com/wp-content/uploads/20230629132639/current-logo-600x338.png",
+            "membershipLevel": "Gold",
+            "NumberOfEmployees": "1,684,853"
+        },
+        {
+            "number": "4",
+            "name": "UBER",
+            "address": "Carr. Guadalajara - Chapala 9999, 45672 Zapote del Valle, Jal.",
+            "phoneNumber": "01-800-997-9900",
+            "websiteUrl": "https://www.uber.com/",
+            "image": "https://static.mercadonegro.pe/wp-content/uploads/2018/09/22191135/antes-y-despues-uber-portal.png",
+            "membershipLevel": "Silver",
+            "NumberOfEmployees": "32,800"
+        },
+        {
+            "number": "5",
+            "name": "MCDONALD'S",
+            "address": "160 Broadway New York, NY 10038",
+            "phoneNumber": "(212) 385-2066",
+            "websiteUrl": "https://www.mcdonalds.com/us/en-us.html",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/1280px-McDonald%27s_logo.svg.png",
+            "membershipLevel": "Silver",
+            "NumberOfEmployees": "150,000"
+        },
+        {
+            "number": "7",
+            "name": "MARRIOTT BONVOY",
+            "address": "700 W Convention Way, Anaheim, CA 92802, USA",
+            "phoneNumber": "+1 714-750-8000",
+            "websiteUrl": "https://www.marriott.com/default.mi",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Marriott_Logo.svg/2560px-Marriott_Logo.svg.png",
+            "membershipLevel": "Gold",
+            "NumberOfEmployees": "377,000"
+        }
+    ]
+}
