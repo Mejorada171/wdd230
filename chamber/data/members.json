@@ -51,6 +51,16 @@
             "NumberOfEmployees": "150,000"
         },
         {
+            "number": "6",
+            "name": "STARBUCKS",
+            "address": "555 West 5th Street Los Angeles, CA 90013",
+            "phoneNumber": "(213) 819-7063",
+            "websiteUrl": "https://www.starbucks.com/",
+            "image": "https://static.vecteezy.com/system/resources/previews/026/783/631/original/starbucks-logo-editorial-free-vector.jpg",
+            "membershipLevel": "Gold",
+            "NumberOfEmployees": "402,000"
+        }
+        {
             "number": "7",
             "name": "MARRIOTT BONVOY",
             "address": "700 W Convention Way, Anaheim, CA 92802, USA",
