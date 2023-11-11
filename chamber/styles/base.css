@@ -899,3 +899,9 @@ button#grid {
     color: black;
 }
 
+#comp {
+    font-family: "Bebas Neue";
+    font-size: 35px;
+    text-align: center;
+}
+
