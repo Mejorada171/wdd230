@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Let's get the current year
     const yearElement = document.getElementById("year");
     const yearOptions = {
@@ -77,3 +77,154 @@ modeButton.addEventListener("click", () => {
         purpose2.style.color = "#353535";
     }
 });
+
+// DISCOVER PAGE
+
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
+
+const baseURL = "https://github.com/Mejorada171/wdd230";
+const linksURL = "https://mejorada171.github.io/wdd230/chamber/data/members.json";
+
+async function getLinks() {
+    const response = await fetch(linksURL);
+    const data = await response.json();
+    displayLinks(data.companies);
+}
+
+function displayLinks(companies) {
+    // Select the grid element
+    let gridElement = document.querySelector(".grid");
+
+    companies.forEach(company => {
+        // Create a new list item
+        let companyItem = document.createElement("li");
+
+        // Create elements for each piece of information
+        let imageElement = document.createElement("img");
+        imageElement.src = company.image; // Set the image source
+
+        let nameElement = document.createElement("p");
+        nameElement.innerText = "Name: " + company.name;
+
+        let addressElement = document.createElement("p");
+        addressElement.innerText = "Address: " + company.address;
+
+        let phoneNumberElement = document.createElement("p");
+        phoneNumberElement.innerText = "Phone Number: " + company.phoneNumber;
+
+        let websiteElement = document.createElement("a");
+        websiteElement.href = company.websiteUrl;
+        websiteElement.innerText = "Website: " + company.websiteUrl;
+
+        // Append the elements to the list item
+        companyItem.appendChild(imageElement);
+        companyItem.appendChild(nameElement);
+        companyItem.appendChild(addressElement);
+        companyItem.appendChild(phoneNumberElement);
+        companyItem.appendChild(websiteElement);
+
+        // Append the list item to the grid element
+        gridElement.appendChild(companyItem);
+    });
+}
+
+getLinks();
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Sample data, replace this with your actual data
+    const directoryData = [
+        { name: "Business 1", category: "Category 1", contact: "Contact 1" },
+        { name: "Business 2", category: "Category 2", contact: "Contact 2" },
+        // Add more data as needed
+    ];
+
+    const directoryList = document.querySelector("grid");
+
+    // Loop through the data and create list items
+    directoryData.forEach((item, index) => {
+        const listItem = document.createElement("div");
+        listItem.classList.add("directory-item");
+
+        listItem.innerHTML = `
+            <h3>${item.name}</h3>
+            <p>Category: ${item.category}</p>
+            <p>Contact: ${item.contact}</p>
+        `;
+
+        directoryList.appendChild(listItem);
+
+    });
+});
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Sample data, replace this with your actual data
+//     const directoryData = [
+//         { name: "Business 1", category: "Category 1", contact: "Contact 1" },
+//         { name: "Business 2", category: "Category 2", contact: "Contact 2" },
+//         // Add more data as needed
+//     ];
+
+//     const directoryList = document.querySelector(".grid"); // Corrected selector
+
+//     // Function to create a list item
+//     function createListItem(item) {
+//         const listItem = document.createElement("div");
+//         listItem.classList.add("directory-item");
+
+//         // Removed image logo from the list view
+//         listItem.innerHTML = `
+//             <h3>${item.name}</h3>
+//             <p>Category: ${item.category}</p>
+//             <p>Contact: ${item.contact}</p>
+//         `;
+
+//         return listItem;
+//     }
+
+//     // Function to render the list
+//     function renderList() {
+//         // Clear the existing content
+//         directoryList.innerHTML = "";
+
+//         // Loop through the data and create list items
+//         directoryData.forEach((item, index) => {
+//             const listItem = createListItem(item);
+//             directoryList.appendChild(listItem);
+//         });
+//     }
+
+//     // Initial rendering
+//     renderList();
+
+//     // Toggle between grid and list view
+//     document.getElementById("list").addEventListener("click", function () {
+//         directoryList.classList.remove("grid");
+//         directoryList.classList.add("list");
+//         renderList();
+//     });
+
+//     document.getElementById("grid").addEventListener("click", function () {
+//         directoryList.classList.remove("list");
+//         directoryList.classList.add("grid");
+//         renderList();
+//     });
+// });
+

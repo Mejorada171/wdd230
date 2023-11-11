@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jorge Mejorada">
+    <meta name="description" content="WDD 230 - Web Frontend Development
+    I'm Jorge Javier Mejorada Hernández and this is the The Directory Page of the Chamber">
+    <link rel="icon" href="images/cahmber-favicon.ico">  
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Jorge Mejorada Hernández - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.mexicodesconocido.com.mx/wp-content/uploads/2010/08/43536211072_f056f987d1_o-scaled.jpg">
+    <meta property="og:url" content="https://churchofjesuschrist.org">
+    <title>The Directory Page</title> <!--First change-->
+</head>
+<body>
+    <header id="headerdirectory">
+        <img id="logodirectory" src="images/rsz_chamber.webp" alt="Chamber logo">
+        <h1 id="titledirectory">Guadalajara Chamber of Commerce</h1>
+        <img id="media1directory" src="images/rsz_1facebook.webp" alt="Facebook icon">
+        <img id="media2directory" src="images/rsz_instagram.webp" alt="Instagram icon">
+        <img id="media3directory" class="media" src="images/rsz_indeed-employer-logo.webp" alt="Indeed icon">
+
+        <div id="mode">☑️</div>
+        <button class="button"></button>
+        <nav class="bar">
+            <ul class="navigation">
+                <li class="open"><a class="open" href="https://mejorada171.github.io/wdd230/chamber/index.html">HOME</a></li>
+                <li class="open"><a class="open" href="https://mejorada171.github.io/wdd230/chamber/discover.html">DISCOVER</a></li>
+                <li class="open"><a class="open" href="#">DIRECTORY</a></li>
+                <li class="open"><a class="open" href="https://mejorada171.github.io/wdd230/chamber/join">JOIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="maindirectory">
+      <div class="menudirectory">
+        <button id="grid">⏹️Grid</button>
+        <button id="list">📄List</button>
+      </div>
+      <article class="grid"></article>
+    </main>
+    <footer>
+        <p>You can call to 999-980-5540</p>
+        <p>This is 04: Project - The Chamber of Commerce Home Page</p>
+        @<div id="year"></div>
+        <p id="name2">Jorge Javier Mejorada Hernández 
+            Guadalajara, Jalisco, Mexico.
+        </p>
+        <img id="flagd" src="images/mexico-flag.webp" alt="Mexican Flag">
+        <p>Last Modified:</p><div id="lastModified"></div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/discover.js"></script>
+
+</body>
+</html>
