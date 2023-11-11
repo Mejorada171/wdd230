@@ -446,10 +446,6 @@ header img {
         margin-left: 100px;
         margin-top: 50px;
     }
-
-    #image1:hover {
-        box-shadow: 0 0 50px #333;
-    }
     
     #image1 {
         width: 350px;
@@ -460,9 +456,9 @@ header img {
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
     }
-    
-    #image2:hover {
-        box-shadow: 0 0 50px #333;
+
+    #image1:hover {
+        box-shadow: none
     }
     
     #image2 {
@@ -474,9 +470,9 @@ header img {
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
     }
-    
-    #image3:hover {
-        box-shadow: 0 0 50px #333;
+
+    #image2:hover {
+        box-shadow: none
     }
     
     #image3 {
@@ -488,9 +484,9 @@ header img {
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
     }
-    
-    #image4:hover {
-        box-shadow: 0 0 50px #333;
+
+    #image3:hover {
+        box-shadow: none
     }
     
     #image4 {
@@ -502,9 +498,9 @@ header img {
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
     }
-    
-    #image5:hover {
-        box-shadow: 0 0 50px #333;
+
+    #image4:hover {
+        box-shadow: none
     }
     
     #image5 {
@@ -516,9 +512,9 @@ header img {
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
     }
-    
-    #image6:hover {
-        box-shadow: 0 0 50px #333;
+
+    #image5:hover {
+        box-shadow: none
     }
     
     #image6 {
@@ -528,6 +524,10 @@ header img {
         border-width: 5px;
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
+    }
+
+    #image6:hover {
+        box-shadow: none
     }
 
     #sidebar {
