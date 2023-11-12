@@ -178,10 +178,10 @@ button.button {
 }
 
 #image1 {
-    width: 350px;
-    height: 200px;
-    margin-top: 25px;
-    margin-left: 130px;
+    width: 320px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 100px;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -192,10 +192,10 @@ button.button {
 }
 
 #image2 {
-    width: 350px;
-    height: 200px;
-    margin-top: 25px;
-    margin-left: 130px;
+    width: 320px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 100px;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -206,10 +206,10 @@ button.button {
 }
 
 #image3 {
-    width: 350px;
-    height: 200px;
-    margin-top: 25px;
-    margin-left: 130px;
+    width: 320px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 100px;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -220,10 +220,10 @@ button.button {
 }
 
 #image4 {
-    width: 350px;
-    height: 200px;
-    margin-top: 25px;
-    margin-left: 130px;
+    width: 320px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 100px;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -234,10 +234,10 @@ button.button {
 }
 
 #image5 {
-    width: 350px;
-    height: 200px;
-    margin-top: 25px;
-    margin-left: 130px;
+    width: 320px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 100px;
     border-width: 5px;
     border-style: solid;
     border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -334,6 +334,14 @@ header img {
 	right: 2rem;
 	font-size: 1.7rem;
 	cursor: pointer;
+}
+
+.caption {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
 
 /* MEDIA QUERY FOR MOBILE VIEW */
@@ -448,10 +456,10 @@ header img {
     }
     
     #image1 {
-        width: 350px;
-        height: 200px;
-        margin-top: 25px;
-        margin-left: 30px;
+        width: 320px;
+        height: 170px;
+        margin-top: 10px;
+        margin-left: 1px;
         border-width: 5px;
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -462,10 +470,10 @@ header img {
     }
     
     #image2 {
-        width: 350px;
-        height: 200px;
-        margin-top: 25px;
-        margin-left: 30px;
+        width: 320px;
+        height: 170px;
+        margin-top: 10px;
+        margin-left: 1px;
         border-width: 5px;
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -476,10 +484,10 @@ header img {
     }
     
     #image3 {
-        width: 350px;
-        height: 200px;
-        margin-top: 25px;
-        margin-left: 30px;
+        width: 320px;
+        height: 170px;
+        margin-top: 10px;
+        margin-left: 1px;
         border-width: 5px;
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -490,10 +498,10 @@ header img {
     }
     
     #image4 {
-        width: 350px;
-        height: 200px;
-        margin-top: 25px;
-        margin-left: 30px;
+        width: 320px;
+        height: 170px;
+        margin-top: 10px;
+        margin-left: 1px;
         border-width: 5px;
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;
@@ -504,10 +512,10 @@ header img {
     }
     
     #image5 {
-        width: 350px;
-        height: 200px;
-        margin-top: 25px;
-        margin-left: 30px;
+        width: 320px;
+        height: 170px;
+        margin-top: 10px;
+        margin-left: 1px;
         border-width: 5px;
         border-style: solid;
         border-image: linear-gradient(45deg,#FFFFFF,#284B63) 1;

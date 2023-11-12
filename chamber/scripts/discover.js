@@ -80,6 +80,48 @@ modeButton.addEventListener("click", () => {
 
 // DISCOVER PAGE
 
+// Function to get the current date in YYYY-MM-DD format
+function getCurrentDate() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = (now.getMonth() + 1).toString().padStart(2, '0');
+    const day = now.getDate().toString().padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
+
+// Function to update the message in the sidebar based on visit history
+function updateMessage() {
+    const lastVisit = localStorage.getItem('lastVisit');
+    const currentDate = getCurrentDate();
+
+    if (!lastVisit) {
+        // First visit
+        localStorage.setItem('lastVisit', currentDate);
+        document.getElementById('message').textContent = 'Welcome! Let us know if you have any questions.';
+    } else {
+        // Calculate the difference in days
+        const diffInMs = new Date(currentDate) - new Date(lastVisit);
+        const diffInDays = Math.floor(diffInMs / (24 * 60 * 60 * 1000));
+
+        if (diffInDays === 0) {
+            // Less than a day
+            document.getElementById('message').textContent = 'Back so soon! Awesome!';
+        } else {
+            // More than a day
+            const dayOrDays = diffInDays === 1 ? 'day' : 'days';
+            document.getElementById('message').textContent = `You last visited ${diffInDays} ${dayOrDays} ago.`;
+        }
+
+        // Update the last visit date
+        localStorage.setItem('lastVisit', currentDate);
+    }
+}
+
+// Call the updateMessage function when the page loads
+updateMessage();
+
+// DIRECTORY PAGE
+
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
