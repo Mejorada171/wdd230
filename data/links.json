@@ -104,8 +104,8 @@
             "lesson": "10",
             "links": [
                 {
-                    "url": "",
-                    "title": ""
+                    "url": "https://mejorada171.github.io/wdd230/lesson10/weather.html",
+                    "title": "Consuming a Weather API"
                 },
                 {
                     "url": "",
