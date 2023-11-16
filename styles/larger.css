@@ -69,6 +69,26 @@
         color: #333;
         font-weight: 700;
     }
+  
+    #place {
+        margin-top: 60px;
+    }
+    
+    #icon {
+        width: 120px;
+        margin-top: 20px;
+        margin-left: 5rem;
+    }
+    
+    #temperature {
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+    
+    #conditions {
+        margin-top: -100px;
+        margin-left: 60px;
+    }
     
     /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
     .open li {
