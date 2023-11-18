@@ -142,14 +142,6 @@
         margin-right: 15%;
     }
 
-    #weather img {
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        left: 35%;
-        top: 185%;
-    }
-    
     section#events {
         background-color: #3c6e71;
         width: 1330px;
