@@ -7,22 +7,15 @@
     font-size: 40px;
 }
 
-.top {
-    color: #cbe7e2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(30, 87, 82);
-    margin: 10px;
-}
-
 nav ul {
     display: flex;
     justify-content: space-evenly;
 }
 
 nav a:hover {
-    background-color: #f9c91a;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 section a:hover {
@@ -36,6 +29,10 @@ h1 {
 
 ul {
     text-align: center;
+}
+
+.navigation {
+    list-style-type: none;
 }
 
 #profile {
@@ -326,6 +323,10 @@ header img {
     flex-direction: row;
     margin-left: 950px;
     margin-top: -100px;
+}
+
+.bar {
+    margin-left: -2%;
 }
 
 #mode {

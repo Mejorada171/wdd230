@@ -147,3 +147,27 @@ function displayLinks(companies) {
 
 getLinks();
 
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+const gridDisplay = document.querySelector(".grid");
+
+gridButton.addEventListener("click", () => {
+  gridDisplay.classList.remove("list-view");
+});
+
+listButton.addEventListener("click", () => {
+  gridDisplay.classList.add("list-view");
+  removeAllImages();
+});
+
+function removeAllImages() {
+  const listItems = gridDisplay.querySelectorAll("li");
+  listItems.forEach(item => {
+    if (!gridDisplay.classList.contains("list-view")) {
+      const imageElement = item.querySelector("img");
+      if (imageElement) {
+        item.removeChild(imageElement);
+      }
+    }
+  });
+}

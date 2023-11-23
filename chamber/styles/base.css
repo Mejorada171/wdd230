@@ -261,7 +261,7 @@ section#weather {
     width: 100px;
     position: absolute;
     left: 60%;
-    top: 135%;
+    top: 150%;
     width: 80px;
     height: 80px;
 }
@@ -732,6 +732,10 @@ footer {
 ///////// DIRECTORY YOU PAGE ///////////
 /////////////////////////////////////////////*/
 
+.list-view li img {
+    display: none; /* Hide images in list view */
+  }  
+
 #maindirectory {
     display: flex;
     flex-direction: column;
@@ -993,6 +997,10 @@ form {
     grid-column: 2/5;
 }
 
+.barjoin {
+    margin-left: -3%;
+}
+
 .field {
     background-color: var(--backformjoin);
     font-family: "Bebas Neue";
@@ -1079,9 +1087,10 @@ form {
     margin: 10px;
 }
 
-.open {
-    margin-left: -30%;
-    padding-left: 28%;
+nav a:hover {
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 /* //////////////////////////////////////////
@@ -1115,6 +1124,10 @@ main#mainthank {
     margin: 10px;
     padding: 10px;
     text-align: center;
+}
+
+.barthanks {
+    margin-left: -3%;
 }
 
 #footerthank {
