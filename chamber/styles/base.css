@@ -294,6 +294,36 @@ section#weather {
 
 /*FIVE BLOCK: MEMBERS */
 
+#spotlight-members {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  margin-top: 20px;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  margin-left: 80%;
+}
+
+.spotlight-member {
+  flex: 1; /* Make each member take equal space */
+  max-width: 300px; /* Set a maximum width for each member spotlight */
+  padding: 20px;
+  margin: 0 10px; /* Adjust horizontal margin for spacing */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#spotlight-members p {
+    text-align: center;
+    padding-left: 90px;
+}
+
+#spotlight-members h2{
+    text-align: center;
+    padding-left: 30%;
+}
+
 section#member {
     background-color: #3C6E71;
     display: grid;
@@ -306,127 +336,14 @@ section#member {
     margin-left: 10px;
 }
 
-#mem-title {
+h2#mem-title {
     font-family: "Bebas Neue";
     font-weight: 600;
     font-size: 30px;
-    grid-column: 5/7;
-    margin-left: -10px;
-}
-
-#member h1 {
-    grid-column: 4/7;
-    grid-row: 1/2;
-    text-align: center;
-    font-family: "Bebas Neue";
-    font-weight: 600;
-    font-size: 30px;
-}
-
-#member h2 {
-    grid-column: 1/4;
-    grid-row: 2/3;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: "Bebas Neue";
-    font-weight: 600;
-    font-size: 25px;
-    padding-bottom: 90px;
-    margin-top: 25px;
-}
-
-#m1 {
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 600;
-    grid-column: 1/4;
-    grid-row: 2/3;
-    margin-top: 80px;
-    text-align: center;
-    margin-left: 1px;
-    padding-left: 30px;
-    padding-right: 31px;
-}
-
-#m2 {
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 600;
-    grid-column: 4/7;
-    grid-row: 2/3;
-    margin-top: 80px;
-    text-align: center;
-    margin-left: 1px;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-#m3 {
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 600;
     grid-column: 7/10;
-    grid-row: 2/3;
-    margin-top: 80px;
-    text-align: center;
-    margin-left: 1px;
-    padding-left: 30px;
-    padding-right: 31px;
+    margin-left: -220%;
 }
 
-#member h3 {
-    grid-column: 4/7;
-    grid-row: 2/3;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: "Bebas Neue";
-    font-weight: 600;
-    font-size: 25px;
-}
-
-#member h4 {
-    grid-column: 7/10;
-    grid-row: 2/3;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: "Bebas Neue";
-    font-weight: 600;
-    font-size: 25px;
-    margin-top: 25px;
-}
-
-.num1 {
-    font-family: "Bebas Neue";
-    font-weight: 600;
-    grid-column: 1/4;
-    grid-row: 2/3;
-    margin-top: 130px;
-    text-align: center;
-    margin-left: 1px;
-}
-
-.num2 {
-    font-family: "Bebas Neue";
-    font-weight: 600;
-    grid-column: 4/7;
-    grid-row: 2/3;
-    margin-top: 130px;
-    text-align: center;
-    margin-left: 1px;
-}
-
-.num3 {
-    font-family: "Bebas Neue";
-    font-weight: 600;
-    grid-column: 7/10;
-    grid-row: 2/3;
-    margin-top: 130px;
-    text-align: center;
-    margin-left: 1px;
-}
 /*SIX BLOCK: WIREFRAME */
 section#wireframe {
     background-color: #3C6E71;

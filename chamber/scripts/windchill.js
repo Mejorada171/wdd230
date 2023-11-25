@@ -28,7 +28,7 @@ async function apifetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // testing only
+            // console.log(data); // testing only
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // OpenWeatherMap API URL FOR FORECAST
- 
+
 const apiKey = 'c64220d3b72c3fe7a1f1b3a06da7a2a4';
 const latitude = 49.74939157527679;
 const longitude = 6.642789529543665;
@@ -143,3 +143,45 @@ async function getWeatherForecast() {
 getWeatherForecast();
 
 
+URL = "https://mejorada171.github.io/wdd230/chamber/data/chamber_members.json";
+
+// Fetch the chamber members data from JSON source
+async function fetchMembers() {
+    try {
+        const response = await fetch(URL);
+        const data = await response.json();
+        displaySpotlight(data.members);
+    } catch (error) {
+        console.error('Error fetching or parsing data:', error);
+    }
+}
+
+function displaySpotlight(members) {
+    const goldSilverMembers = members.filter(member =>
+        member.status === 'gold' || member.status === 'silver'
+    );
+
+    const shuffleArray = array => {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    };
+
+    const shuffledMembers = shuffleArray(goldSilverMembers);
+
+    const spotlightMembersContainer = document.getElementById('spotlight-members');
+    for (let i = 0; i < Math.min(3, shuffledMembers.length); i++) {
+        const member = shuffledMembers[i];
+        const memberInfo = document.createElement('div');
+        memberInfo.innerHTML = `
+        <h2>${member.name}</h2>
+        <p>"${member.email}"</p>
+        <p class="num${i + 1}">${member.phone}</p>
+      `;
+        spotlightMembersContainer.appendChild(memberInfo);
+    }
+}
+
+fetchMembers();
