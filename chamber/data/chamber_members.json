@@ -1,0 +1,23 @@
+{
+    "members": [
+      {
+        "name": "Master Dock",
+        "email": "master.sales@masterdock.com",
+        "phone": "+999 8888 0000",
+        "status": "gold"
+      },
+      {
+        "name": "Polisteel",
+        "email": "polisteel.salesagent1@polisteel.com",
+        "phone": "+999 7070 0900",
+        "status": "silver"
+      },
+      {
+        "name": "Truck You",
+        "email": "trucks.sales@truckyou.com",
+        "phone": "+999 9090 8000",
+        "status": "gold"
+      }
+    ]
+  }
+  
