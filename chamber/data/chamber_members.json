@@ -17,6 +17,30 @@
         "email": "trucks.sales@truckyou.com",
         "phone": "+999 9090 8000",
         "status": "gold"
+      },
+      {
+        "name": "Steel America",
+        "email": "sales@steelamerica.com",
+        "phone": "+999 9800 8900",
+        "status": "gold"
+      },
+      {
+        "name": "Iron Company",
+        "email": "iron.sales@iconco.com",
+        "phone": "+999 8290 7900",
+        "status": "silver"
+      }, 
+      {
+        "name": "Ship it",
+        "email": "shipemail@shipit.com",
+        "phone": "+999 8089 7900",
+        "status": "gold"
+      },
+      {
+        "name": "Expert engineer ",
+        "email": "experts@engineer.com",
+        "phone": "+999 8767 8100",
+        "status": "silver"
       }
     ]
   }
