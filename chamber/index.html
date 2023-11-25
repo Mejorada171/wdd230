@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css"> 
     <meta property="og:title" content="Jorge Mejorada Hernández - WDD 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.mexicodesconocido.com.mx/wp-content/uploads/2010/08/43536211072_f056f987d1_o-scaled.jpg">
@@ -44,9 +44,11 @@
         <button id="closeBannerBtn" class="close-button">❌</button>
       </div>
       <section id="purpose">
-        <button>
-          <span>JOIN THE CHAMBER</span>
-        </button>
+        <a href="join.html">
+          <button id="btnjoin">
+            <span>JOIN THE CHAMBER</span>
+          </button>
+        </a>
         <h2 id="p">PURPOSE</h2>
         <h3 id="pp">
           We are a community of large medium and small businesses in the
@@ -92,30 +94,6 @@
           <li id="li2"></li>
           <li id="li3"></li>
         </ul>
-        <!-- <div class="wind">
-          <p class="w1" id="sub">Wind Chill Calculator</p>
-          <p class="w1" id="chill">Enter temperature and wind speed</p>
-
-          <label class="w1" for="temperature">Temperature (°F):</label>
-          <input
-            class="w1"
-            type="number"
-            id="temperature"
-            min="-50"
-            max="50"
-          /><br />
-
-          <label class="w1" for="windspeed">Wind Speed (mph):</label>
-          <input class="w1" type="number" id="windspeed" min="3.1" /><br />
-
-          <button class="w1" id="calculate" onclick="calculateWindChill()">
-            Press Calculate Wind Chill
-          </button>
-
-          <p class="w1" id="outcome">
-            Wind Chill Factor: <span id="windChillValue"></span>
-          </p>
-        </div> -->
         <img src="images/rsz_cloudy.webp" alt="Cloudy" loading="lazy">
         <div class="weather-container">
           <div class="current-weather">
@@ -135,17 +113,6 @@
       <section id="member">
         <h2 id="mem-title">MEMBER SPOTLIGHT</h2>
         <div id="spotlight-members" class="spotlight-container"></div>
-        <!-- <h2>MASTER DOCK</h2>
-        <p id="m1">"Your supply specialists" master.sales@masterdock.com</p>
-        <p class="num1">+999 8888 0000</p>
-        <h3>POLISTEEL</h3>
-        <p id="m2">
-          "The greatest stock of steels" polisteel.salesagent1@polisteel.com
-        </p>
-        <p class="num2">+999 7070 0900</p>
-        <h4>TRUCK YOU</h4>
-        <p id="m3">"More than 10,000 trips" trucks.sales@truckyou.com</p>
-        <p class="num3">+999 9090 8000</p> -->
       </section>
     </main>
     <footer>

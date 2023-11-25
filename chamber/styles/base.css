@@ -72,7 +72,24 @@ section#purpose {
 }
 
 button.button{
-    display: none} 
+    display: none 
+} 
+
+#btnjoin {
+    width: 210px;
+    height: 90px;
+    margin: 10px 10px 10px 10px;
+    border: 0;
+    border-radius: 8px;
+    color: #FFFFFF;
+    display: grid;
+    grid-column: 3/4;
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    padding: 4px;
+    cursor: pointer;
+    margin-left: 210%;
+}
 
 button {
     width: 210px;
@@ -98,6 +115,7 @@ button span {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 0%;
 }
 
 button:hover span {
@@ -298,10 +316,10 @@ section#weather {
   display: flex;
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
-  margin-top: 20px;
+  margin-top: -50px;
   font-family: "Bebas Neue";
-  font-size: 20px;
-  margin-left: 80%;
+  font-size: 18px;
+  margin-left: 2%;
 }
 
 .spotlight-member {
@@ -330,7 +348,7 @@ section#member {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 60px 1fr;
     width: 1330px;
-    height: 300px;
+    height: 500px;
     margin-top: 10px;
     color: #FFFFFF;
     margin-left: 10px;
@@ -340,8 +358,8 @@ h2#mem-title {
     font-family: "Bebas Neue";
     font-weight: 600;
     font-size: 30px;
-    grid-column: 7/10;
-    margin-left: -220%;
+    grid-column: 4/10;
+    margin-left: -1100%;
 }
 
 /*SIX BLOCK: WIREFRAME */

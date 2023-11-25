@@ -47,7 +47,7 @@ const purpose2 = document.getElementById("pp");
 modeButton.addEventListener("click", () => {
     if (modeButton.textContent.includes("☑️")) {
         modeButton.textContent = "❎";
-        events.style.background = "#000";
+        events.style.backgroundColor = "#000";
         events.style.color = "#FFFFFF";
         weather.style.backgroundColor = "#000";
         weather.style.color = "#FFFFFF";
