@@ -101,6 +101,20 @@
         <img id="flag" src="images/mexico-flag.webp" alt="Mexican Flag" loading="lazy">
         <p>Last Modified:</p><div id="lastModified"></div>
     </footer>
+<script>
+    // Number of visits
+    const messageDiv = document.getElementById('message');
+    let numVisits = Number(localStorage.getItem('numVisits-ls')) || 0;
+
+    if (numVisits !== 0) {
+        messageDiv.textContent = `Number of visits: ${numVisits}`;
+    } else {
+        messageDiv.textContent = `This is your first visit. Welcome!`;
+    }
+
+    numVisits++;
+    localStorage.setItem('numVisits-ls', numVisits);
+</script>
     <script src="scripts/discover.js"></script>
 </body>
 </html>
