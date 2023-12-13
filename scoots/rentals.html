@@ -33,38 +33,8 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
   <main>
     <div class="catalogue">
-<script>
-    // Function to create rental cards
-    function createRentalCards() {
-      const catalogue = document.querySelector('.catalogue');
-  
-      // Loop through all rental types in the JSON data
-      rentalData.rentalTypeList.forEach(rental => {
-        // Create elements for rental card
-        const card = document.createElement('div');
-        card.classList.add('rental-card');
-  
-        // Create card content using JSON data
-        card.innerHTML = `
-          <img src="./img/${rental.img}.png" alt="${rental.rentalType}">
-          <h2>${rental.rentalType}</h2>
-          <p>Max Persons: ${rental.maxPersons}</p>
-          <p>Reservation - Half Day: ${rental.reservationHalfDay}</p>
-          <p>Reservation - Full Day: ${rental.reservationFullDay}</p>
-          <p>Walk-In - Half Day: ${rental.walkInHalfDay}</p>
-          <p>Walk-In - Full Day: ${rental.walkInFullDay}</p>
-        `;
-  
-        catalogue.appendChild(card);
-      });
-    }
-  
-    // Call the function when the page loads
-    window.addEventListener('load', createRentalCards);
-  </script>
     </div>
   </main>
   <footer>
